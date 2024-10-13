@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<header>
+  <h1>sneakers</h1>
+  <nav>
+    <ul>
+  <li>Collections</li>
+    <li> Men</li>
+      <li>Women</li>
+        <li>About</li>
+          <li>Contact</li>
+  </ul>
+  </nav>
+  <div class="user-actions">
+  <img   id="cartIcon" class="cart-icon"src="./images/icon-cart.svg" alt="">
+  <img  class="avatar"src="./images/image-avatar.png" alt="">
+  </div>
+
+  <div class="cart-modal" id="cartModal">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Your Cart</h2>
+    <div class="cart-content">
+        <p>No items in your cart.</p>
+        <!-- You can add cart items here -->
+    </div>
+    <button class="checkout">Checkout</button>
+</div>
+</header>
+<div class="divider"></div>
+
+ 
+<div class="preview">
+  <img  class ="main-img lightbox-trigger "src="./images/image-product-1.jpg">
+  <div class="bottom-prevew">
+  <img class ="side-img lightbox-trigger active "src="./images/image-product-1-thumbnail.jpg">
+  <img class ="side-img lightbox-trigger "src="./images/image-product-2-thumbnail.jpg">
+  <img class ="side-img lightbox-trigger "src="./images/image-product-3-thumbnail.jpg">
+  <img class ="side-img lightbox-trigger "src="./images/image-product-4-thumbnail.jpg">
+  </div>
+</div>
+
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+  <span class="next" onclick="changeImage(1)">&#10095;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<div class="product-info">
+<h4>SNEAKER COMPANY</h4>
+ <h1>Fall Limited Edition <br> Sneakers</h1>
+
+  <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+<div class="pricing">
+ <span class="current">$125.00</span>
+  <span class="discount">50%</span>
+ <span class="original">$250.00</span> 
+</div>
+
+<div class="button-container">
+  <button class="amount">
+    <img src="./images/icon-plus.svg">0
+    <img src="./images/icon-minus.svg">
+  </button>
+
+  <button class="add">
+    <img src="./images/icon-cart.svg"> 
+    Add to cart
+  </button>
+  </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
