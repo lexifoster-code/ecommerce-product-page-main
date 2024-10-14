@@ -187,16 +187,16 @@ header {
    /* display: none;  Hidden by default */
     position: relative;
     z-index: 1000; /* On top of other content */
-     /*  left: 20%;  */
+     /*  left: 20%; 
     top: 10%;
    /* transform: translate(-50%, -50%);*/
+    left:40px;
+    top:50px;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 300px; /* Adjust width as needed */
+    width: 425px; /* Adjust width as needed */
 
-    .close{
-
-    }
+   
 }
