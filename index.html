@@ -35,7 +35,7 @@
   </div>
 
   <div class="cart-modal" id="cartModal">
-    <span class="close" id="closeModal">&times;</span>
+    <span><img id="closeModal" src="./images/icon-close.svg"> </span>
     <h2>Your Cart</h2>
     <div class="cart-content">
         <p>No items in your cart.</p>
@@ -48,7 +48,7 @@
 
  
 <div class="preview">
-  <img  class ="main-img lightbox-trigger "src="./images/image-product-1.jpg">
+  <img  class ="main-img lightbox-trigger" src="./images/image-product-1.jpg">
   <div class="bottom-prevew">
   <img class ="side-img lightbox-trigger active "src="./images/image-product-1-thumbnail.jpg">
   <img class ="side-img lightbox-trigger "src="./images/image-product-2-thumbnail.jpg">
@@ -58,10 +58,14 @@
 </div>
 
 <div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <span class="prev" onclick="changeImage(-1)">&#10094;</span>
-  <span class="next" onclick="changeImage(1)">&#10095;</span>
-  <img class="lightbox-content" id="lightbox-img">
+  <span ><img class="close"src="./images/icon-close.svg"></span>
+  <img class="lightbox-content"  id="lightbox-img">
+  <div class="lightbox-thumbnails">
+    <img class="lightbox-side-img active " src="./images/image-product-1-thumbnail.jpg" data-full-src="./images/image-product-1.jpg">
+    <img class="lightbox-side-img" src="./images/image-product-2-thumbnail.jpg" data-full-src="./images/image-product-2.jpg">
+    <img class="lightbox-side-img" src="./images/image-product-3-thumbnail.jpg" data-full-src="./images/image-product-3.jpg">
+    <img class="lightbox-side-img" src="./images/image-product-4-thumbnail.jpg" data-full-src="./images/image-product-4.jpg">
+</div>
 </div>
 
 <div class="product-info">

@@ -86,6 +86,10 @@ header {
         margin: 30px 10px;
         
  }
+ .side-img.active{
+    border: 2px solid orange;
+    color:  hsl(25, 100%, 94%);
+ }
  }
 
  .product-info{
@@ -200,3 +204,57 @@ header {
 
    
 }
+
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Use fixed positioning to cover the entire viewport */
+    z-index: 1000; 
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Adjust position to truly center it */
+    width: 100%;
+    height: 100%; /* Width of the lightbox */
+    background-color: rgba(70, 58, 58, 0.8); /* Semi-transparent dark background */
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; /* Padding for content */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.lightbox-content {
+    /*max-width: 90%;
+    max-height: 80%;*/
+    width:440px;
+    height:440px;
+    border-radius: 15px;
+}
+
+.close {
+    position: relative; 
+    color: rgb(11, 9, 9); 
+    font-size: 40px; 
+    cursor: pointer;
+}
+
+.lightbox-thumbnails {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 10px; 
+    width: 90px;
+    height: 90px;
+    margin: 30px 10px;
+    gap: 20px;
+    position: relative;
+    top:300px;
+    right:275px;
+}
+.lightbox-side-img{
+    border-radius: 10px;
+}
+.lightbox-side-img.active{
+    border: 2px solid orange;
+   
+}
+
+;
