@@ -30,18 +30,22 @@
   </ul>
   </nav>
   <div class="user-actions">
+    <a href="#" class="notification">
+      <span class="badge">0</span>
+    </a>
   <img   id="cartIcon" class="cart-icon"src="./images/icon-cart.svg" alt="">
   <img  class="avatar"src="./images/image-avatar.png" alt="">
   </div>
 
   <div class="cart-modal" id="cartModal">
     <span><img id="closeModal" src="./images/icon-close.svg"> </span>
-    <h2>Your Cart</h2>
+    <h2> Cart</h2>
+    <div class="seprator"></div>
     <div class="cart-content">
         <p>No items in your cart.</p>
         <!-- You can add cart items here -->
     </div>
-    <button class="checkout">Checkout</button>
+   <!-- <button class="checkout">Checkout</button>-->
 </div>
 </header>
 <div class="divider"></div>
@@ -59,12 +63,15 @@
 
 <div id="lightbox" class="lightbox">
   <span ><img class="close"src="./images/icon-close.svg"></span>
+  <span> <img class="prev" src='./images/icon-previous.svg'></span>
   <img class="lightbox-content"  id="lightbox-img">
+  <span> <img class="next" src='./images/icon-next.svg'></span>
   <div class="lightbox-thumbnails">
     <img class="lightbox-side-img active " src="./images/image-product-1-thumbnail.jpg" data-full-src="./images/image-product-1.jpg">
     <img class="lightbox-side-img" src="./images/image-product-2-thumbnail.jpg" data-full-src="./images/image-product-2.jpg">
     <img class="lightbox-side-img" src="./images/image-product-3-thumbnail.jpg" data-full-src="./images/image-product-3.jpg">
     <img class="lightbox-side-img" src="./images/image-product-4-thumbnail.jpg" data-full-src="./images/image-product-4.jpg">
+  
 </div>
 </div>
 
@@ -88,7 +95,7 @@
   </button>
 
   <button class="add">
-    <img src="./images/icon-cart.svg"> 
+    <img  src="./images/icon-cart.svg"> 
     Add to cart
   </button>
   </div>

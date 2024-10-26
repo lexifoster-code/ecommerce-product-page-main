@@ -49,11 +49,21 @@ header {
   
  }
  .cart-icon{
-   width:20px;
-   height:20px;
+   width:30px;
+   height:30px;
    margin-top: 10px;
    
  }
+ 
+  .notification .badge {
+    position: absolute;
+    left: 12px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background:  hsl(26, 100%, 55%);
+    color: white;
+  }
+  
  h1{
     font-weight: 700;
  }
@@ -146,8 +156,8 @@ header {
  }
 
  .button-container {
-    display: flex; /* Align buttons in a row */
-    gap: 15px; /* Space between buttons */
+    display: flex; 
+    gap: 15px; 
 }
 
  .amount{
@@ -162,7 +172,7 @@ header {
  
     img{
       
-            margin: 0 10px; /* Space between the signs and number */
+            margin: 0 10px; 
             padding:5px;
     }
   
@@ -188,43 +198,80 @@ header {
   }
 
   .cart-modal {
-   /* display: none;  Hidden by default */
+    display: none;  
     position: relative;
-    z-index: 1000; /* On top of other content */
-     /*  left: 20%; 
-    top: 10%;
-   /* transform: translate(-50%, -50%);*/
+    z-index: 1000; 
     left:40px;
     top:50px;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 425px; /* Adjust width as needed */
+    width: 425px; 
+    height: 200px;
 
-   
+   img{
+    position: relative;
+   }
 }
 
 .lightbox {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed; /* Use fixed positioning to cover the entire viewport */
     z-index: 1000; 
-    left: 50%; /* Center horizontally */
-    top: 50%; /* Center vertically */
-    transform: translate(-50%, -50%); /* Adjust position to truly center it */
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
     width: 100%;
-    height: 100%; /* Width of the lightbox */
-    background-color: rgba(70, 58, 58, 0.8); /* Semi-transparent dark background */
+    height: 100%; 
+    background-color: rgba(70, 58, 58, 0.8); 
     justify-content: center; 
     align-items: center; 
-    padding: 20px; /* Padding for content */
-    border-radius: 8px; /* Rounded corners */
-    overflow: hidden; /* Prevent overflow */
+    padding: 20px;
+    border-radius: 8px; 
+    overflow: hidden; 
+    
+}
+
+.next{
+    border-radius:  50%;
+    width: 40px;            
+    height: 40px;            
+    border: none;           
+    border-radius: 50%;       
+    background-color: hsl(223, 64%, 98%);
+    color: white;             
+    font-size: 16px;         
+    cursor: pointer;          
+    display: flex;           
+    align-items: center;
+    justify-content: center;   
+    transition: background-color 0.3s; /* Smooth background color transition */
+    padding:10px;
+    position: relative;
+    right:20px;
+}
+.prev{
+    border-radius:  50%;
+    width: 40px;            
+    height: 40px;            
+    border: none;             
+    border-radius: 50%;       
+    background-color: hsl(223, 64%, 98%);
+    color: white;            
+    font-size: 16px;          
+    cursor: pointer;          
+    display: flex;           
+    align-items: center;      
+    justify-content: center;   
+    transition: background-color 0.3s; 
+    padding:10px;
+    position: relative;
+    left:20px;
+   
 }
 
 .lightbox-content {
-    /*max-width: 90%;
-    max-height: 80%;*/
     width:440px;
     height:440px;
     border-radius: 15px;
@@ -232,9 +279,12 @@ header {
 
 .close {
     position: relative; 
-    color: rgb(11, 9, 9); 
+    bottom:250px;
+    left:475px;
+    color: rgb(191, 190, 190); 
     font-size: 40px; 
     cursor: pointer;
+    
 }
 
 .lightbox-thumbnails {
@@ -256,5 +306,7 @@ header {
     border: 2px solid orange;
    
 }
+
+
 
 ;

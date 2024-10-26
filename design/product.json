@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "src": "./images/image-product-1-thumbnail.jpg",
+        "alt": "Thumbnail Image 1",
+        "description": "Description for Image 1",
+        "price": 125
+    },
+    {
+        "id": 2,
+        "src": "./images/image-product-2-thumbnail.jpg",
+        "alt": "Thumbnail Image 2",
+        "description": "Description for Image 2",
+        "price": 125
+    },
+    {
+        "id": 3,
+        "src": "./images/image-product-3-thumbnail.jpg",
+        "alt": "Thumbnail Image 3",
+        "description": "Description for Image 3",
+        "price": 125
+    },
+    {
+        "id": 4,
+        "src": "./images/image-product-4-thumbnail.jpg",
+        "alt": "Thumbnail Image 4",
+        "description": "Description for Image 3",
+        "price": 125
+    }
+]
