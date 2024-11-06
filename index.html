@@ -36,28 +36,43 @@
   <img   id="cartIcon" class="cart-icon"src="./images/icon-cart.svg" alt="">
   <img  class="avatar"src="./images/image-avatar.png" alt="">
   </div>
+ 
+  
 
   <div class="cart-modal" id="cartModal">
-    <span><img id="closeModal" src="./images/icon-close.svg"> </span>
-    <h2> Cart</h2>
-    <div class="seprator"></div>
-    <div class="cart-content">
-        <p>No items in your cart.</p>
-        <!-- You can add cart items here -->
-    </div>
-   <!-- <button class="checkout">Checkout</button>-->
+   <!-- <span><img id="closeModal" src="./images/icon-close.svg"> </span>-->
+  
+   
+    <div class="cart-content" id="cart-content">
+     
+       <!-- Dynamically populated cart items will go here -->
+       <h2 class="cart-title"> Cart</h2>
+      <div class="divider"></div>
+      <div id="cart-items-list"></div>
+      <img  class="delete button"src="./images/icon-delete.svg" alt="">
+      <!-- Cart Footer (e.g., total price, checkout) -->
+      <div class="cart-footer">
+        
+        <button id="checkoutButton">Checkout</button>
+      </div>
+     
+      
+  </div>
 </div>
+
+</div> 
 </header>
-<div class="divider"></div>
+
+<div class="seperator"></div>
 
  
 <div class="preview">
   <img  class ="main-img lightbox-trigger" src="./images/image-product-1.jpg">
   <div class="bottom-prevew">
-  <img class ="side-img lightbox-trigger active "src="./images/image-product-1-thumbnail.jpg">
-  <img class ="side-img lightbox-trigger "src="./images/image-product-2-thumbnail.jpg">
-  <img class ="side-img lightbox-trigger "src="./images/image-product-3-thumbnail.jpg">
-  <img class ="side-img lightbox-trigger "src="./images/image-product-4-thumbnail.jpg">
+  <img class ="side-img lightbox-trigger active "src="./images/image-product-1-thumbnail.jpg" data-image-src="./images/image-product-1.jpg">
+  <img class ="side-img lightbox-trigger "src="./images/image-product-2-thumbnail.jpg" data-image-src="./images/image-product-2.jpg">
+  <img class ="side-img lightbox-trigger "src="./images/image-product-3-thumbnail.jpg" data-image-src="./images/image-product-3.jpg">
+  <img class ="side-img lightbox-trigger "src="./images/image-product-4-thumbnail.jpg" data-image-src="./images/image-product-4.jpg">
   </div>
 </div>
 
