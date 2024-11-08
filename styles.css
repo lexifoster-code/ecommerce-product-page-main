@@ -348,6 +348,7 @@ header {
         position: relative;
         right: 95px;
         top: 10px;
+        display:hidden;
     }
     }
     .item-name{
@@ -375,10 +376,10 @@ header {
         right: 235px;
     }
 
-/* Checkout button */
+
 #checkoutButton {
     background-color: hsl(26, 100%, 55%);
-    color: white; /* White text */
+    color: white; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -389,7 +390,7 @@ header {
     position: relative;
     left:5px;
     margin-left: 2px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     

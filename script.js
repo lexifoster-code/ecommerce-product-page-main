@@ -199,12 +199,18 @@ modal.addEventListener('click', (event) => {
         <span class="cart-item-price">$${item.price}</span>
         <span class="cart-item-quantity">x${item.quantity}</span>
         <span class="cart-item-total">$${itemTotal}</span>
+        <img  class="delete button"src="./images/icon-delete.svg" alt="">
+        
       `;
   
       cartItemsList.appendChild(cartItemDiv);
-    });
-  
-    // Update the total amount
-  //  cartTotal.textContent = `Total: $${totalAmount.toFixed(2)}`;
-  }
-  
+
+     const checkoutButton = document.getElementById('checkoutButton')
+      if (cartItems.length > 0) {
+        checkoutButton.style.display = 'block';
+    } else {
+        checkoutButton.style.display = 'none';
+    }
+})
+}
+ 
