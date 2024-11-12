@@ -8,6 +8,7 @@ const notificationBadge = document.querySelector('.badge')
 const cartItemsList = document.getElementById("cart-items-list");
 const cartTotal = document.querySelector('.cart-footer');
 
+
 let cartItems=[]
 
 
@@ -135,7 +136,7 @@ nextBtn.addEventListener("click", () => {
 const prevBtn = document.querySelector('.prev');
 if (prevBtn) {
     prevBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length; // Loop around
+        currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length; 
         updateImage();
     });
 }
@@ -178,11 +179,11 @@ modal.addEventListener('click', (event) => {
       cartItems.push({ ...product, quantity: value }); // Add product with quantity to the cart
     }
   
-    // Update cart display
+   
     updateCart();
   }
   
-  // Update Cart function to display items
+  // Update Cart function to display items dynamically
   function updateCart() {
     cartItemsList.innerHTML = ''; // Clear the cart items list
     let totalAmount = 0;
@@ -199,18 +200,54 @@ modal.addEventListener('click', (event) => {
         <span class="cart-item-price">$${item.price}</span>
         <span class="cart-item-quantity">x${item.quantity}</span>
         <span class="cart-item-total">$${itemTotal}</span>
-        <img  class="delete button"src="./images/icon-delete.svg" alt="">
+      
         
       `;
   
       cartItemsList.appendChild(cartItemDiv);
 
-     const checkoutButton = document.getElementById('checkoutButton')
-      if (cartItems.length > 0) {
-        checkoutButton.style.display = 'block';
-    } else {
-        checkoutButton.style.display = 'none';
-    }
 })
+
+const deleteBtn = document.querySelector('.deleteBtn')
+const checkoutButton = document.getElementById('checkoutButton')
+deleteBtn.addEventListener('click', removeItemFromCart)
+if (cartItems.length > 0) {
+  checkoutButton.style.display = 'block';
+  deleteBtn.style.display = 'block';
+} else {
+  checkoutButton.style.display = 'none';
+  deleteBtn.style.display = 'none';
 }
+  }
+
  
+
+function removeItemFromCart() {
+       const item = cartItems[0]; // Get the first item in the cart
+
+        if (item.quantity > 1) {
+          
+            item.quantity--;
+        } else {
+            // Remove the item entirely if quantity is 1
+            cartItems.shift(); 
+        }
+
+        updateCart(); 
+        UpdateNotificationBadge();
+}
+
+function UpdateNotificationBadge(){
+    if (notificationBadge) {
+        const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0); 
+        notificationBadge.textContent = totalItems; // Update badge to total quantity
+    }
+        
+    }
+
+
+ 
+
+    
+
+

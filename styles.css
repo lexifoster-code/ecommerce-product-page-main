@@ -218,6 +218,7 @@ header {
 
    img{
     position: relative;
+   
    }
    .cart-title{
     color:lightgrey;
@@ -231,14 +232,12 @@ header {
 .cart-content{
     width:300px;
 
-    img{
-        width: 50px;
-        height: 50px;
-    }
+  
 }
 .cart-footer{
     position: relative;
     top:20px;
+    display: flex;
 }
 
 
@@ -342,14 +341,7 @@ header {
        
         border-radius:5px;
     }
-    .deleteBtn{
-        width:15px;
-        height: 15px;
-        position: relative;
-        right: 95px;
-        top: 10px;
-        display:hidden;
-    }
+   
     }
     .item-name{
         color:lightgrey;
@@ -444,3 +436,10 @@ header {
     top: 10px;
     right: 175px;
 }
+.deleteBtn{
+    position: relative;
+    bottom: 70px;
+    left: 200px;
+    display: none;
+}
+
