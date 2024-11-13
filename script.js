@@ -245,9 +245,9 @@ function UpdateNotificationBadge(){
         
     }
 
+    const navLinks = document.querySelectorAll('.nav-link');
 
- 
+  
 
-    
 
 
